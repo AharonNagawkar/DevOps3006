@@ -7,7 +7,9 @@ def save_name(names_file):
 
 
 def show_names():
-    my_file = open("names.txt", "r")
+    my_file, a = open("names.txt", "r"), "a"
+    aviel ="david"
+
     for name in my_file.readlines():
         print(name, end='')
     my_file.close()
